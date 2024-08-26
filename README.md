@@ -183,4 +183,4 @@ Here is some sample data you can use to test the API:
 
 - You can find the Postman collection for this API in the `PostmanApiDoc/` directory. Import this collection into Postman to view and test the API endpoints.
 
-  - [Postman Collection](./PostmanApiDocs/Exelon Circuits CRUD API.postman_collection.json)
+  - [Postman Collection](./PostmanApiDocs/Exelon%20Circuits%20CRUD%20API.postman_collection.json)
