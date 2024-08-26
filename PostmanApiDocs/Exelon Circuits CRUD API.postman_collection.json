@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "8ea9af21-57d6-4db6-b1be-e17972ea22a3",
+		"name": "Exelon Circuits CRUD API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37916345"
+	},
+	"item": [
+		{
+			"name": "Add City",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Nice\",\r\n        \"population\": 340017,\r\n        \"country\": \"France\",\r\n        \"latitude\": 43.7102,\r\n        \"longitude\": 7.2620\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/cities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"cities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete City",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/cities/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"cities",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/cities?page=1&limit=10&filter={\"country\":\"USA\"}&sort=population,desc&search=los&projection=name,population",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"cities"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "filter",
+							"value": "{\"country\":\"USA\"}"
+						},
+						{
+							"key": "sort",
+							"value": "population,desc"
+						},
+						{
+							"key": "search",
+							"value": "los"
+						},
+						{
+							"key": "projection",
+							"value": "name,population"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update City",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"population\": 1560000,\r\n     \"latitude\":9.9251,\r\n     \"longitude\":78.1198\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/cities/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"cities",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
