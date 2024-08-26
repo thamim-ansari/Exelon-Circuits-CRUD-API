@@ -173,15 +173,14 @@ Here is some sample data you can use to test the API:
    }
   ```
 
-  ##Note:
+## API Documentation
 
-* **My Live Link**:
+- **My Live Link**:
+
   ```
     https://exelon-circuits-crud-api.onrender.com
   ```
 
-## API Documentation
-
 - You can find the Postman collection for this API in the `PostmanApiDoc/` directory. Import this collection into Postman to view and test the API endpoints.
 
-  - [Postman Collection](./PostmanApiDoc/postman_collection.json)
+  - [Postman Collection](./PostmanApiDocs/Exelon Circuits CRUD API.postman_collection.json)
